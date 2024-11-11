@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica se o e-mail é válido
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Seu e-mail (onde você deseja receber o e-mail)
-        $to = "vitoriiaslva21@gmail.com";  // Substitua por seu e-mail
+        $to = "ordorealite@gmail.com";  // Substitua por seu e-mail
 
         // Assunto do e-mail
         $subject = "Novo Participante no Ordo Realite";
