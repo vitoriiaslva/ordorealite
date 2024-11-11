@@ -20,3 +20,42 @@
         </form>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordo Realite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Ordo Realite</h1>
+        <h2>Esta missão foi destinada apenas àqueles capazes de ver além da realidade. Sua entrada no Ordo Realite depende de um simples passo à frente. O caminho está à sua frente, mas somente os que têm olhos para o invisível conseguirão enxergá-lo.</h2>
+        <p>Para prosseguir, forneça suas credenciais.
+            O tempo é relativo, mas a oportunidade é única.
+            Ao apertar em enviar, você e só você será responsável por o que virá no futuro. </p>
+        
+        <form id="emailForm">
+            <label for="email">Insira seu e-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Estou Pronto!</button>
+        </form>
+
+        <div class="question">
+            <p>Você realmente está preparado para entrar no enigma?</p>
+            <button onclick="alert('Ótimo! Prepare-se para a aventura!')">Sim, estou pronto!</button>
+            <button onclick="alert('Entendemos, talvez em outra ocasião!')">Não, acho que não.</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            const email = document.getElementById('email').value;
+            alert(`Obrigado por se inscrever, ${email}! Prepare-se para a aventura!`);
+            // Aqui você pode redirecionar para outra página ou enviar o e-mail para o servidor
+        });
+    </script>
+</body>
+</html>
